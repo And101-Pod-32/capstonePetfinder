@@ -26,12 +26,12 @@ If we had to describe this milestone in three (3) emojis, they would be: **emoji
 The following REQUIRED features are completed:
 
 - [X] Creation of GitHub Organization and Group Project Repo
-- [ ] Updated Course Portal group info with Group Name and App Description
+- [X] Updated Course Portal group info with Group Name and App Description
 
 The following REQUIRED files are included:
 
 - [X] Included 📄 `brainstorming.md`, which contains:
-  - [ ] Our initial brainstorming ideas (6+ ideas)
+  - [X] Our initial brainstorming ideas (6+ ideas)
   - [X] 5-category evaluation of our top 3 ideas
   - [X] Final app idea chosen
 - [X] Included 📄 `project_spec.md`, which contains:
