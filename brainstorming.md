@@ -28,12 +28,12 @@
     - **Scope**: The app is manageable as it does not require too much information and detail.
 
 3. Recipe Finder App
-    - **Description**:
-    - **Mobile**:
-    - **Story**:
-    - **Market**:
-    - **Habit**:
-    - **Scope**: 
+    - **Description**: Allows user to find recipies based on their favorite type of cuisine category or with a "I'm feeling lucky" random category selector.
+    - **Mobile**: The app would be mobile-first. While it would have similar functionalities to a hypothetical website, the app would make much greater use of its allocated screen real estate.
+    - **Story**: Users can find unique foods and explore new food styles from around the world.
+    - **Market**: The app would appeal to young adults that regularly try out new experiences.
+    - **Habit**: The app will likely not be frequently used. It will be pulled out when the user needs to find a new recipie, which may not be that often.
+    - **Scope**: The app is realistic and does not require too much information or complexity.
 
 ## Final Idea
 - Petfinder
