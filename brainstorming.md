@@ -4,6 +4,7 @@
 3. Recipe Finder App - Search for recipes with filters such as diet and allergens
 4. Pet Finder App - Find a pet based on query parameters: Breed, size, good with children, color
 5. Expense Tracker - Track your expenses
+6. Lyrics App - The user searches for a song and the app displays its lyrics.
 
 ## Top 3 New App Ideas
 1. Petfinder App
