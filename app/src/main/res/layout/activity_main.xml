@@ -16,4 +16,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/type"
+        android:layout_width="102dp"
+        android:layout_height="25dp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <Spinner
+        android:id="@+id/sex"
+        android:layout_width="123dp"
+        android:layout_height="30dp"
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <Spinner
+        android:id="@+id/size"
+        android:layout_width="101dp"
+        android:layout_height="28dp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="75dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
