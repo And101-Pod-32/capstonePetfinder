@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Capstonepetfinder</string>
+    <string-array name="gender_options">
+        <item>any</item>
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+
+    <string-array name="size_options">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>xlarge</item>
+    </string-array>
+
+    <string-array name="type_options" />
 </resources>
