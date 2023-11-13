@@ -34,8 +34,8 @@ The following REQUIRED files are included:
   - [X] Checked off 2+ completed features
   - [X] 2+ Videos/GIFs of build progress
 
-- [ ] Our 🎥 Demo Video
-  - [ ] We have also added the Demo Video Link to the Group Info Form on the course portal.
+- [X] Our 🎥 Demo Video
+  - [X] We have also added the Demo Video Link to the Group Info Form on the course portal.
 
 The following EXTRA features are implemented:
 
@@ -47,9 +47,11 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
+https://www.youtube.com/watch?v=xNPV6_MTWdE
+
 <img src='demo.gif' title='Video Demo' width='' alt='Video Demo' />
 
-VIDEO created with **Kap**
+VIDEO created with **OBS and iMovie**
 
 
 # AND101 Milestone 1 - **Pod 32 Petfinder App**
