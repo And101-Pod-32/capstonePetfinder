@@ -23,6 +23,7 @@
         app:layout_constraintStart_toEndOf="@id/spinnerSize"
         app:layout_constraintTop_toBottomOf="@id/title" />
 
+
     <Spinner
         android:id="@+id/spinnerType"
         android:layout_width="0dp"
@@ -33,9 +34,8 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@id/spinnerSize"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title" />
-
-
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/spinnerSize"

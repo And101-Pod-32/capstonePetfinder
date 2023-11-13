@@ -4,40 +4,38 @@
     <string-array name="gender_options">
 <!--        <item>@string/gender</item>-->
 <!--        <item>@string/any</item>-->
-        <item>@string/male</item>
-        <item>@string/female</item>
+        <item>@string/Male</item>
+        <item>@string/Female</item>
     </string-array>
 
     <string-array name="size_options">
 <!--        <item>@string/size</item>-->
-        <item>@string/small</item>
-        <item>@string/medium</item>
-        <item>@string/large</item>
-        <item>@string/xlarge</item>
+        <item>@string/Small</item>
+        <item>@string/Medium</item>
+        <item>@string/Large</item>
+        <item>@string/Xlarge</item>
     </string-array>
 
     <string-array name="type_options">
-<!--        <item>@string/type</item>-->
-        <item>@string/dog</item>
-        <item>@string/cat</item>
-        <item>@string/fish</item>
-        <item>@string/lizard</item>
+        <item>@string/Dog</item>
+        <item>@string/Cat</item>
+        <item>@string/Fish</item>
+        <item>@string/Lizard</item>
     </string-array>
 
     <string name="gender">Gender</string>
-<!--    <string name="any">any</string>-->
-    <string name="male">male</string>
-    <string name="female">female</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
 
 <!--    <string name="size">Size</string>-->
-    <string name="small">small</string>
-    <string name="medium">medium</string>
-    <string name="large">large</string>
-    <string name="xlarge">xlarge</string>
+    <string name="Small">Small</string>
+    <string name="Medium">Medium</string>
+    <string name="Large">Large</string>
+    <string name="Xlarge">Xlarge</string>
 
 <!--    <string name="type">Type</string>-->
-    <string name="dog">Dog</string>
-    <string name="cat">Cat</string>
-    <string name="fish">Fish</string>
-    <string name="lizard">Lizard</string>
+    <string name="Dog">Dog</string>
+    <string name="Cat">Cat</string>
+    <string name="Fish">Fish</string>
+    <string name="Lizard">Lizard</string>
 </resources>
