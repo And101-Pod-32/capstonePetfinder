@@ -2,12 +2,14 @@
     <string name="app_name">Capstonepetfinder</string>
     <string name="title">Find-A-Pet</string>
     <string-array name="gender_options">
+        <item>Gender</item>
         <item>any</item>
         <item>male</item>
         <item>female</item>
     </string-array>
 
     <string-array name="size_options">
+        <item>Size</item>
         <item>small</item>
         <item>medium</item>
         <item>large</item>
@@ -15,6 +17,7 @@
     </string-array>
 
     <string-array name="type_options">
+        <item>Type</item>
         <item>Dog</item>
         <item>Cat</item>
         <item>Fish</item>
