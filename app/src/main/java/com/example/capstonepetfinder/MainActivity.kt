@@ -196,7 +196,7 @@ class MainActivity : AppCompatActivity() {
 
             // check if "photos" array is not null and not empty
             if (photosArray != null && photosArray.length() > 0) {
-                val imageUrl = photosArray.getJSONObject(0).getString("medium")
+                val imageUrl = photosArray.getJSONObject(0).getString("small")
                 val name = petObject.getString("name")
                 val sex = petObject.getString("gender")
                 val breedsObject = petObject.getJSONObject("breeds")

@@ -4,64 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#cbdf90">
 
     <!-- Title -->
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/title"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Spinners -->
-    <Spinner
-        android:id="@+id/spinnerType"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20sp"
-        android:entries="@array/type_options"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintEnd_toStartOf="@id/spinnerSize"
-        />
 
-    <Spinner
-        android:id="@+id/spinnerSize"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20sp"
-        android:entries="@array/size_options"
-        app:layout_constraintStart_toEndOf="@id/spinnerType"
-        app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintEnd_toStartOf="@id/spinnerGender"
-        />
+    <!-- Recycler View -->
 
     <Spinner
         android:id="@+id/spinnerGender"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        app:layout_constraintTop_toBottomOf="@id/title"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="8dp"
         android:entries="@array/gender_options"
-        app:layout_constraintStart_toEndOf="@id/spinnerSize"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toEndOf="@id/spinnerSize"
+        app:layout_constraintTop_toBottomOf="@id/title" />
 
-    <!-- Recycler View -->
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/type_options"
+        android:textColor="#553D36"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@id/spinnerSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+
+    <Spinner
+        android:id="@+id/spinnerSize"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/size_options"
+        app:layout_constraintEnd_toStartOf="@id/spinnerGender"
+        app:layout_constraintStart_toEndOf="@id/spinnerType"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/marko_one"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#553D36"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/spinnerSize"
+        android:layout_width="413dp"
+        android:layout_height="599dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerSize"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="403dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSize"
+        app:srcCompat="@drawable/pawline" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="142dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/buddies" />
+
+    <ImageView
+        android:id="@+id/paw"
+        android:layout_width="61dp"
+        android:layout_height="105dp"
+        android:rotation="235"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerGender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:srcCompat="@drawable/cat_hand_calico" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
