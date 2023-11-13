@@ -19,8 +19,6 @@
     <string-array name="type_options">
         <item>@string/Dog</item>
         <item>@string/Cat</item>
-        <item>@string/Fish</item>
-        <item>@string/Lizard</item>
     </string-array>
 
     <string name="gender">Gender</string>
@@ -36,6 +34,7 @@
 <!--    <string name="type">Type</string>-->
     <string name="Dog">Dog</string>
     <string name="Cat">Cat</string>
-    <string name="Fish">Fish</string>
-    <string name="Lizard">Lizard</string>
+    <string name="type_label">Type</string>
+    <string name="size_label">Size</string>
+    <string name="gender_label">Gender</string>
 </resources>

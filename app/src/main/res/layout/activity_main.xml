@@ -13,6 +13,36 @@
 
     <!-- Recycler View -->
 
+    <TextView
+        android:id="@+id/spinnerTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/spinnerType"
+        app:layout_constraintStart_toStartOf="@id/spinnerType"
+        app:layout_constraintEnd_toEndOf="@id/spinnerType"/>
+
+    <TextView
+        android:id="@+id/spinnerSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/spinnerSize"
+        app:layout_constraintStart_toStartOf="@id/spinnerSize"
+        app:layout_constraintEnd_toEndOf="@id/spinnerSize"/>
+
+    <TextView
+        android:id="@+id/spinnerGenderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/spinnerGender"
+        app:layout_constraintStart_toStartOf="@id/spinnerGender"
+        app:layout_constraintEnd_toEndOf="@id/spinnerGender"/>
+
     <Spinner
         android:id="@+id/spinnerGender"
         android:layout_width="0dp"
@@ -21,7 +51,7 @@
         android:entries="@array/gender_options"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/spinnerSize"
-        app:layout_constraintTop_toBottomOf="@id/title" />
+        app:layout_constraintBottom_toTopOf="@id/imageView"/>
 
 
     <Spinner
@@ -34,18 +64,16 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@id/spinnerSize"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title"
         app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/spinnerSize"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="8dp"
         android:entries="@array/size_options"
         app:layout_constraintEnd_toStartOf="@id/spinnerGender"
         app:layout_constraintStart_toEndOf="@id/spinnerType"
-        app:layout_constraintTop_toBottomOf="@id/title" />
+        app:layout_constraintBottom_toBottomOf="@id/spinnerType"/>
 
     <TextView
         android:id="@+id/title"
@@ -64,21 +92,23 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="413dp"
-        android:layout_height="599dp"
+        android:layout_width="match_parent"
+        android:layout_height="543dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spinnerSize"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="403dp"
+        android:layout_width="match_parent"
         android:layout_height="33dp"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerSize"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/pawline" />
 
     <ImageView
@@ -95,10 +125,12 @@
         android:id="@+id/paw"
         android:layout_width="61dp"
         android:layout_height="105dp"
+        android:layout_marginBottom="16dp"
         android:rotation="235"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/spinnerGender"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/title"
         app:srcCompat="@drawable/cat_hand_calico" />
 
