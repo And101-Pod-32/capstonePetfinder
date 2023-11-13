@@ -1,3 +1,57 @@
+# AND101 Milestone 2 - **Pod 32**
+
+Submitted by:
+- **Brandon Boit**
+
+- **Ben Karanja**
+
+- **Diana Hung**
+
+- **Aycan Bilge**
+
+- **Rafael Diaz**
+
+Time spent: **14** hours spent in total
+
+## Summary
+
+This document provides a summary of our project building process for our app, **Find-A-Pet**
+
+## Milestone Requirements
+
+<!-- Please be sure to change the [ ] to [x] for any features you completed.  If a feature is not checked [x], you might miss the points for that item! -->
+
+The following REQUIRED features are completed:
+
+- [X] Assign features to each member of your group
+- [X] Establish a goal time for completing each feature
+
+The following REQUIRED files are included:
+
+- [X] Updated 📄 `project_spec.md`, which contains:
+  - [X] App Overview (Milestone 1)
+  - [X] App Spec (Milestone 1)
+  - [X] Checked off 2+ completed features
+  - [X] 2+ Videos/GIFs of build progress
+
+- [ ] Our 🎥 Demo Video
+  - [ ] We have also added the Demo Video Link to the Group Info Form on the course portal.
+
+The following EXTRA features are implemented:
+
+- [X] List anything else that you added to improve your submission!
+ - [X] added cute graphics like a paw print border and paw to make the app more fun
+ - [X] added spinners to allow user to filter pets   
+
+## 🎥 Demo Video
+
+Here's a video that demos all of the app's implemented features:
+
+<img src='https://i.imgur.com/GxIPzmL.gifv' title='Video Demo' width='' alt='Video Demo' />
+
+VIDEO created with **Kap**
+
+
 # AND101 Milestone 1 - **Pod 32 Petfinder App**
 
 Submitted by:

@@ -8,13 +8,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class petFinderAdapter (
+class PetFinderAdapter (
     private val imageList:List<String>,
     private val nameList: List<String>,
     private val sexList: List<String>,
     private val breedList: List<String>
 
-): RecyclerView.Adapter<petFinderAdapter.ViewHolder>(){
+): RecyclerView.Adapter<PetFinderAdapter.ViewHolder>(){
 
     class ViewHolder(view: View): RecyclerView.ViewHolder(view){
         val petImage:ImageView

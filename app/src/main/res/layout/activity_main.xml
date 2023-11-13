@@ -4,35 +4,155 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#cbdf90"
     tools:context=".MainActivity">
 
+    <!-- Title -->
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/pet_list"
-        android:layout_width="409dp"
-        android:layout_height="563dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <!-- Spinners -->
+
+    <!-- Recycler View -->
+
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/gender_options"
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinnerSize" />
+
+    <TextView
+        android:id="@+id/spinnerTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/marko_one"
+        android:layout_marginBottom="12dp"
+        android:text="@string/type_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/spinnerType"
+        app:layout_constraintEnd_toEndOf="@id/spinnerType"
+        app:layout_constraintStart_toStartOf="@id/spinnerType" />
+
+    <TextView
+        android:id="@+id/spinnerSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/marko_one"
+        android:layout_marginBottom="8dp"
+        android:text="@string/size_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/spinnerSize"
+        app:layout_constraintEnd_toEndOf="@id/spinnerSize"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@id/spinnerSize" />
+
+    <TextView
+        android:id="@+id/spinnerGenderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/marko_one"
+        android:text="@string/gender_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/spinnerGender"
+        app:layout_constraintEnd_toEndOf="@id/spinnerGender"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@id/spinnerGender" />
+
+    <Spinner
+        android:id="@+id/spinnerSize"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:entries="@array/size_options"
+        app:layout_constraintBottom_toBottomOf="@id/spinnerType"
+        app:layout_constraintEnd_toStartOf="@id/spinnerGender"
+        app:layout_constraintStart_toEndOf="@id/spinnerType" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/type_options"
+        android:textColor="#553D36"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@id/spinnerSize"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/marko_one"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#553D36"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerSize"
         app:layout_constraintVertical_bias="1.0" />
 
-    <Spinner
-        android:id="@+id/type"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSize"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/pawline" />
 
-    <Spinner
-        android:id="@+id/gender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/pet_list"
-        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="168dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/buddies" />
 
-    <Spinner
-        android:id="@+id/size"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="75dp" />
+    <ImageView
+        android:id="@+id/paw"
+        android:layout_width="132dp"
+        android:layout_height="126dp"
+        android:rotation="235"
+        app:layout_constraintBottom_toBottomOf="@+id/tagline"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:srcCompat="@drawable/cat_hand_calico" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="213dp"
+        android:layout_height="17dp"
+        android:text="Find your perfect companion here"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerSizeLabel"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
