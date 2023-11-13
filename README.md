@@ -40,7 +40,8 @@ The following REQUIRED files are included:
 The following EXTRA features are implemented:
 
 - [X] List anything else that you added to improve your submission!
- - [X] added cute graphics like a paw print border and paw to make the app more fun   
+ - [X] added cute graphics like a paw print border and paw to make the app more fun
+ - [X] added spinners to allow user to filter pets   
 
 ## 🎥 Demo Video
 
