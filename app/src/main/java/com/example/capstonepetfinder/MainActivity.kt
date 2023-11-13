@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity() {
         val selectedSize = binding.spinnerSize.selectedItem.toString()
         val selectedGender = binding.spinnerGender.selectedItem.toString()
 
-        params["limit"] = "5"
+        params["limit"] = "10"
         params["page"] = "1"
         params["key"] = apiKey
         params["type"] = selectedType.lowercase()
@@ -179,35 +179,42 @@ class MainActivity : AppCompatActivity() {
 
     // will parse JSON into mutable lists, then load into recycler view
     private fun loadPetData(json: JSON) {
-//        // clear existing data whenever new data needs to be loaded
-//        imageList.clear()
-//        nameList.clear()
-//        sexList.clear()
-//        breedList.clear()
+        // clear existing data whenever new data needs to be loaded
+        imageList.clear()
+        nameList.clear()
+        sexList.clear()
+        breedList.clear()
 
         // log the raw JSON retrieved
         Log.d("JSON", json.toString())
 
         // parse the JSON and update the lists
-        val jsonArray = json.jsonArray
+        val jsonArray = json.jsonObject.getJSONArray("animals")
         for (i in 0 until jsonArray.length()) {
             val petObject = jsonArray.getJSONObject(i)
-            val imageUrl = petObject.getJSONArray("photos").getJSONObject(0).getString("medium")
-            val name = petObject.getString("name")
-            val sex = petObject.getString("gender")
-            val breed = petObject.getJSONArray("breeds").getJSONObject(0).getString("name")
+            val photosArray = petObject.optJSONArray("photos")
 
-            // log data parsed for each pet
-            Log.d("Pet Data", "Name: $name, Sex: $sex, Breed: $breed, Image URL: $imageUrl")
+            // check if "photos" array is not null and not empty
+            if (photosArray != null && photosArray.length() > 0) {
+                val imageUrl = photosArray.getJSONObject(0).getString("medium")
+                val name = petObject.getString("name")
+                val sex = petObject.getString("gender")
+                val breedsObject = petObject.getJSONObject("breeds")
+                val breed = breedsObject.getString("primary")
 
-            // Add parsed data to lists
-            imageList.add(imageUrl)
-            nameList.add(name)
-            sexList.add(sex)
-            breedList.add(breed)
+                // log data parsed for each pet
+                Log.d("Pet Data", "Name: $name, Sex: $sex, Breed: $breed, Image URL: $imageUrl")
+
+                // Add parsed data to lists
+                imageList.add(imageUrl)
+                nameList.add(name)
+                sexList.add(sex)
+                breedList.add(breed)
+            }
         }
 
         // update existing adapter's data and notify the change
         petFinderAdapter.notifyDataSetChanged()
     }
+
 }
