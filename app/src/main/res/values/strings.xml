@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Capstonepetfinder</string>
+    <string name="title">Find-A-Pet</string>
     <string-array name="gender_options">
         <item>any</item>
         <item>male</item>
@@ -13,5 +14,10 @@
         <item>xlarge</item>
     </string-array>
 
-    <string-array name="type_options" />
+    <string-array name="type_options">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Fish</item>
+        <item>Lizard</item>
+    </string-array>
 </resources>
