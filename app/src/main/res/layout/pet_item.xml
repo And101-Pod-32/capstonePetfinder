@@ -34,47 +34,42 @@
         android:id="@+id/name"
         android:layout_width="175dp"
         android:layout_height="29dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        app:layout_constraintStart_toEndOf="@+id/nameLabel"
+        app:layout_constraintStart_toStartOf="@id/breed"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/breedLabel"
-        android:layout_width="60dp"
+        android:layout_width="wrap_content"
         android:layout_height="28dp"
         android:layout_marginTop="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/marko_one"
-        android:text="Breed:"
+        android:text="@string/breed_label"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#553D36"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/breed"
+
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/nameLabel" />
 
 
     <TextView
         android:id="@+id/breed"
-        android:layout_width="207dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="186dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
         android:ellipsize="end"
-        android:maxLines="2"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/breedLabel"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintTop_toTopOf="@id/breedLabel" />
 
     <TextView
         android:id="@+id/sexLabel"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
@@ -92,10 +87,9 @@
         android:id="@+id/sex"
         android:layout_width="143dp"
         android:layout_height="35dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        app:layout_constraintStart_toEndOf="@+id/sexLabel"
+        app:layout_constraintStart_toStartOf="@id/breed"
         app:layout_constraintTop_toBottomOf="@+id/breedLabel" />
 
 
