@@ -80,6 +80,8 @@ Here's a place for any other notes on the app, it's creation
 process, or what you learned this unit!  
 
 For Milestone 2, include **2+ Videos/GIFs** of the build process here!
+![Kapture 2023-11-13 at 09 46 24](https://github.com/And101-Pod-32/capstonePetfinder/assets/112122672/d07a3b63-9fc4-4923-b67d-607ea16ac9c6)
+![Kapture 2023-11-13 at 12 30 45](https://github.com/And101-Pod-32/capstonePetfinder/assets/112122672/68889f08-bd77-4f8f-ac7f-0513865e0b8f)
 
 ## License
 
