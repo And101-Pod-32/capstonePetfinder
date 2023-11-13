@@ -30,10 +30,9 @@
 
 Required Features:
 
-- User can search by animal type (cat, dog, bird, rabbit, etc)
-- User can filter results by location, breed, age, size, and gender
-- User can sort results by distance
-- User can view images of each animal their search returns in the recycler view along with their basic info such as name, breed, sex
+[X] User can search by animal type (cat, dog, bird, rabbit, etc)
+[X] User can filter results by breed, size, and gender
+[X] User can view images of each animal their search returns in the recycler view along with their basic info such as name, breed, sex
 
 Stretch Features:
 
@@ -61,11 +60,9 @@ Stretch Features:
 
 Required Feature
 
-- **User can select the type, size and sex of animal they want from a menu**
+[X] **User can select the type, size and sex of animal they want from a menu**
   - => **App will return data that only contains type, size and sex of animal the user is looking for**
-  - ...
-- **User will be able to enter the location, breed and age of animal they are looking for in a form**
-  - => **App will return results that match the user's query/queries**
+    
  
 
 ## Wireframes
