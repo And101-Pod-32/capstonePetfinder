@@ -28,7 +28,7 @@ The following REQUIRED features are completed:
 
 The following REQUIRED files are included:
 
-- [ ] Updated 📄 `project_spec.md`, which contains:
+- [X] Updated 📄 `project_spec.md`, which contains:
   - [X] App Overview (Milestone 1)
   - [X] App Spec (Milestone 1)
   - [X] Checked off 2+ completed features
@@ -39,7 +39,8 @@ The following REQUIRED files are included:
 
 The following EXTRA features are implemented:
 
-- [ ] List anything else that you added to improve your submission!
+- [X] List anything else that you added to improve your submission!
+ - [X] added cute graphics like a paw print border and paw to make the app more fun   
 
 ## 🎥 Demo Video
 
